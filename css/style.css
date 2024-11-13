@@ -1,11 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+}
+
+:root{
+    --color-body: hsl(0, 0%, 8%);
+    --color-card: hsl(0, 0%, 12%);
+    --color-bottom: hsl(0, 0%, 20%);
+    --color-green: hsl(75, 94%, 57%);
+    --color-white: hsl(0, 0%, 100%);
 }
 
 body{
-    background-color: #141414;
+    background-color: var(--color-body);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -14,8 +24,8 @@ body{
 
 .container{
     width: 300px;
-    height: 480px;
-    background-color: #1F1F1F;
+    height: 495px;
+    background-color: var(--color-card);
     border-radius: 10px;
 }
 
@@ -33,5 +43,68 @@ body{
     background-image: url(/assets/img/avatar-jessica.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 45px 0 25px 0;
+    margin: 35px 0 25px 0;
+}
+
+.card-text-name{
+    color:  var(--color-white);
+    font-size: 13px;
+    margin-bottom: 6.5px;
+}
+
+.card-text-name h2{
+    font-weight: 500;
+}
+
+.card-text-local{
+    color: var(--color-green);
+    font-size: 9.6px;
+    margin-bottom: 21.8px;
+}
+
+.card-text-local h3{
+    font-weight: 600;
+}
+
+.card-text-work{
+    color: var(--color-white);
+    font-size: 11px;
+    margin-bottom: 8px;
+}
+
+.card-text-work p{
+    font-weight: 300;
+}
+
+.card-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.card-links .links-media{
+    list-style-type: none;
+}
+
+.card-links a{
+    position: relative;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    color: var(--color-white);
+    font-weight: 600;
+    text-decoration: none;
+    font-size: 11px;
+    background-color: var(--color-bottom);
+    margin: 12.4px;
+    padding: 11.5px 72px;
+    border-radius: 8px;
+}
+
+.card-links a:hover{
+    color: var(--color-card);
+    font-weight: 600;
+    background-color: var(--color-green);
+    transition: all 0.3s ease-in-out;
 }
