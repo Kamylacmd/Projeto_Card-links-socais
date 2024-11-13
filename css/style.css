@@ -37,13 +37,13 @@ body{
 }
 
 .card-photo{
-    width: 75px;
-    height: 75px;
+    width: 70px;
+    height: 70px;
     border-radius: 50%;
     background-image: url(/assets/img/avatar-jessica.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 35px 0 25px 0;
+    margin: 35px 0 22px 0;
 }
 
 .card-text-name{
